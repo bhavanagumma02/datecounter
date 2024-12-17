@@ -1,0 +1,116 @@
+/* General header styles */
+.headerSection {
+  display: flex;
+  align-items: center; /* Vertically centers items within the header */
+  justify-content: space-between; /* Spaces out the left, center, and right sections */
+  background-color: #f8f8f8; /* Light background color for the header */
+  padding: 10px 20px; /* Padding for the header */
+  border-bottom: 1px solid #ddd; /* Optional border for the header's bottom */
+}
+
+/* Left section styles */
+.headerSection .left {
+  display: flex;
+  align-items: center;
+}
+
+.headerSection .left h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0; /* Remove default margins */
+  color: #333;
+}
+
+/* Center section styles */
+.headerSection .centre {
+  display: flex;
+}
+
+.headerSection .centre ul {
+  display: flex;
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+.headerSection .centre ul li {
+  margin: 0 10px; /* Add spacing between list items */
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.headerSection .centre ul li:hover {
+  color: #000; /* Highlight on hover */
+  text-decoration: underline;
+}
+
+/* Search bar styles */
+.headerSection .search {
+  margin: 0 20px; /* Optional margin to space the search bar */
+}
+
+.headerSection .search input {
+  padding: 5px 10px; /* Add padding inside the search box */
+  font-size: 1rem;
+  border: 1px solid #ccc; /* Light border around the input */
+  border-radius: 4px; /* Rounded corners */
+  outline: none; /* Remove focus outline */
+}
+
+/* Right section styles */
+.headerSection .right {
+  display: flex;
+  align-items: center;
+}
+
+.headerSection .signin,
+.headerSection .cart {
+  margin-left: 20px; /* Spacing between the buttons */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.headerSection .signin:hover,
+.headerSection .cart:hover {
+  color: #007bff; /* Highlight color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .headerSection {
+    flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+    padding: 10px;
+  }
+
+  .headerSection .centre ul {
+    flex-wrap: wrap; /* Adjust the menu for small screens */
+    justify-content: center;
+  }
+
+  .headerSection .centre ul li {
+    margin: 5px 10px; /* Reduce margins for smaller viewports */
+  }
+
+  .headerSection .search,
+  .headerSection .right {
+    margin-top: 10px; /* Add space between rows for small screens */
+  }
+}
+.bannerBox {
+  margin: 10px 0px;
+}
+
+.bannerBox img {
+  width: 100%;
+}
+.menImages {
+  display: flex;
+  gap: 10px;
+}
+
+.menImages img {
+  width: 250px;
+  height: 220px;
+}
